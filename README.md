@@ -22,4 +22,4 @@ Type `javac name_of_the_algorithm_file.java` and press enter to compile.
 Type `java name_of_the_algorithm_file` to run the application.  
 
 ## Sources
-This project was created with the usage of [https://www.javacodegeeks.com](https://www.javacodegeeks.com).
+This project was created with the usage of [https://www.javacodegeeks.com](https://www.javacodegeeks.com)
