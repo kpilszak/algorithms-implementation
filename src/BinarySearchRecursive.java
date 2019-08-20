@@ -29,4 +29,8 @@ public class BinarySearchRecursive {
 
         input.close();
     }
+
+    public static int recursiveBinarySearch(int[] input, int key) {
+        return binarySearch(input, 0, input.length - 1, key);
+    }
 }
