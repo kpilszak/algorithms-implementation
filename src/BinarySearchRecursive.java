@@ -9,22 +9,22 @@ public class BinarySearchRecursive {
         System.out.println("Enter total number of elements:");
         int lengthOfTheArray = input.nextInt();
 
-        int[] arrayOfIntegersToSort = new int[lengthOfTheArray];
+        int[] arrayOfIntegersToSearchIn = new int[lengthOfTheArray];
 
-        System.out.printf("Enter %d of integers:%n", lengthOfTheArray);
+        System.out.printf("Enter %d integers:%n", lengthOfTheArray);
         for (int i = 0; i < lengthOfTheArray; i++) {
-            arrayOfIntegersToSort[i] = input.nextInt();
+            arrayOfIntegersToSearchIn[i] = input.nextInt();
         }
 
         System.out.println("Enter number to be searched in an array:");
         int key = input.nextInt();
 
-        int index = recursiveBinarySearch(input, key);
+        int index = recursiveBinarySearch(arrayOfIntegersToSearchIn, key);
 
         if (index == -1) {
             System.out.printf("Sorry, %d doesn't exist in this array.%n", key);
         } else {
-            System.out.printf("%d has an index of %d.%n", index);
+            System.out.printf("%d has an index of %d.%n", key, index);
         }
 
         input.close();
@@ -32,5 +32,20 @@ public class BinarySearchRecursive {
 
     public static int recursiveBinarySearch(int[] input, int key) {
         return binarySearch(input, 0, input.length - 1, key);
+    }
+
+    private static int binarySearch(int[] array, int start, int end, int target){
+        int middle = (start + end) / 2;
+        if (end < start) {
+            return -1;
+        }
+
+        if (target == array[middle]) {
+            return middle;
+        } else if (target < array[middle]) {
+            return binarySearch(array, start, middle - 1, target);
+        } else {
+            return binarySearch(array, middle + 1, end, target);
+        }
     }
 }
