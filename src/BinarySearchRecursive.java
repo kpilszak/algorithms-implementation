@@ -31,7 +31,24 @@ public class BinarySearchRecursive {
     }
 
     public static int recursiveBinarySearch(int[] input, int key) {
+        input = sortingArray(input);
         return binarySearch(input, 0, input.length - 1, key);
+    }
+
+    private static int[] sortingArray(int[] array) {
+        int temp;
+
+        for (int j = 0; j < array.length - 1; j++) {
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i + 1] < array[i]) {
+                    temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                }
+            }
+        }
+
+        return array;
     }
 
     private static int binarySearch(int[] array, int start, int end, int target){
