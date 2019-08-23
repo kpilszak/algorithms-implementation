@@ -9,6 +9,7 @@
 ## General info
 This project is a set of implementations of basic algorithms.  
 The main purpose is to show how do the algoritms work.  
+1. Binary Search Algorithm
 
 ## Technologies
 Project is created with:
