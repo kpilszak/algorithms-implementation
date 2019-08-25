@@ -9,6 +9,10 @@
 ## General info
 This project is a set of implementations of basic algorithms.  
 The main purpose is to show how do the algoritms work.  
+1. Binary Search Algorithm - used to search an element in a sorted input set.  
+Binary search works on the principle of divide and conquer. In this technique, a solution is found by dividing the input on some smaller set using some rules.  
+In a binary search algorithm, you first find the middle element of the array and compare that with the number you are searching. If it's equal then you return true or index of that number and your binary search is complete but if it doesn't match then you divide the array in two-part based upon whether the middle element is greater than or less than the key value, which you are searching.  
+If the key(target value) is greater than the middle element than search values in the second half of the array because the array is sorted in increasing order. Similarly, if the key is lower than the middle element it means it's in the first part of the array.  
 
 ## Technologies
 Project is created with:
@@ -22,4 +26,4 @@ Type `javac name_of_the_algorithm_file.java` and press enter to compile.
 Type `java name_of_the_algorithm_file` to run the application.  
 
 ## Sources
-This project was created with the usage of [https://www.javacodegeeks.com](https://www.javacodegeeks.com)
+This project was created with the usage of [https://www.java67.com](https://www.java67.com)
