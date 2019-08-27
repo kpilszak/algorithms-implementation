@@ -29,4 +29,14 @@ public class LinearSearch {
 
         input.close();
     }
+
+    public static int linearSearch(int[] input, int key) {
+        for (int i = 0; i < input.length; i++) {
+            if (input[i] == key) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
 }
