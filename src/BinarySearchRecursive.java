@@ -4,7 +4,7 @@ public class BinarySearchRecursive {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Binary Search Algorithm");
+        System.out.println("Binary Search Algorithm with recursion");
 
         System.out.println("Enter total number of elements:");
         int lengthOfTheArray = input.nextInt();
