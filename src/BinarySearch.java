@@ -28,4 +28,22 @@ public class BinarySearch {
 
         input.close();
     }
+
+    public static int binarySearch(int[] array, int target) {
+        int start = 0;
+        int end = array.length - 1;
+
+        while (end >= start) {
+            int middle = (start + end) / 2;
+            if (array[middle] == target) {
+                return middle;
+            } else if (array[middle] < target) {
+                start = middle + 1;
+            } else if (array[middle] > target) {
+                end = middle - 1;
+            }
+        }
+
+        return -1;
+    }
 }
