@@ -31,11 +31,11 @@ public class BinarySearchRecursive {
     }
 
     public static int recursiveBinarySearch(int[] input, int key) {
-        input = sortingArray(input);
+        input = sortArray(input);
         return binarySearch(input, 0, input.length - 1, key);
     }
 
-    private static int[] sortingArray(int[] array) {
+    private static int[] sortArray(int[] array) {
         int temp;
 
         for (int j = 0; j < array.length - 1; j++) {
