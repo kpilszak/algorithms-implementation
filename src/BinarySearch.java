@@ -29,7 +29,9 @@ public class BinarySearch {
         input.close();
     }
 
-    public static int binarySearch(int[] array, int target) {
+    public static int binarySearch(int[] input, int target) {
+        int[] array = sortArray(input);
+
         int start = 0;
         int end = array.length - 1;
 
@@ -45,5 +47,21 @@ public class BinarySearch {
         }
 
         return -1;
+    }
+
+    private static int[] sortArray(int[] array) {
+        int temp;
+
+        for (int j = 0; j < array.length - 1; j++) {
+            for (int i = 0; i < array.length - 1; i++) {
+                if (array[i + 1] < array[i]) {
+                    temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                }
+            }
+        }
+
+        return array;
     }
 }
