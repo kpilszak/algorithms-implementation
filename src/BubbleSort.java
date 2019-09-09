@@ -23,4 +23,16 @@ public class BubbleSort {
 
         input.close();
     }
+
+    private int[] bubbleSort(int[] arrayToSort) {
+        for (int i = 0; i < arrayToSort.length; i++) {
+            for (int j = arrayToSort.length - 1; j > i; j--) {
+                if (arrayToSort[j] < arrayToSort [j - 1]) {
+                    swap(arrayToSort, j, j - 1);
+                }
+            }
+        }
+
+        return arrayToSort;
+    }
 }
