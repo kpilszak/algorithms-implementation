@@ -24,7 +24,7 @@ public class BubbleSort {
         input.close();
     }
 
-    private int[] bubbleSort(int[] arrayToSort) {
+    private static int[] bubbleSort(int[] arrayToSort) {
         for (int i = 0; i < arrayToSort.length; i++) {
             for (int j = arrayToSort.length - 1; j > i; j--) {
                 if (arrayToSort[j] < arrayToSort [j - 1]) {
@@ -32,7 +32,12 @@ public class BubbleSort {
                 }
             }
         }
-
         return arrayToSort;
+    }
+
+    private static void swap(int[] array, int from, int to){
+        int temp = array[from];
+        array[from] = array[to];
+        array[to] = temp;
     }
 }
