@@ -14,8 +14,10 @@ Binary search works on the principle of divide and conquer. In this technique, a
 In a binary search algorithm, you first find the middle element of the array and compare that with the number you are searching. If it's equal then you return true or index of that number and your binary search is complete but if it doesn't match then you divide the array in two-part based upon whether the middle element is greater than or less than the key value, which you are searching.  
 If the key(target value) is greater than the middle element than search values in the second half of the array because the array is sorted in increasing order. Similarly, if the key is lower than the middle element it means it's in the first part of the array.  
 In the examples there are two ways of implementing Binary Search Algorithm - using recursion and without recursion.  
-2. Linear search Algorithm - used to search an element in an array. The time complexity of this algorithm is O(n).  
+2. Linear Search Algorithm - used to search an element in an array. The time complexity of this algorithm is O(n).  
 In this technique, a solution is found by iterating over the array and comparing each element with target element to see if they are equal.  
+3. Bubble Sort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(n^2). For small arrays, which are almost sorted, the time complexity in it's best case performance can be equal to O(n).  
+In this technique, algorithm is comparing two adjacent elements and swapping them if the order is not correct. Since we compare each element with another, we need two for loops and that result in complexity of O(n^2).  
 
 ## Technologies
 Project is created with:
