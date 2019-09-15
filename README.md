@@ -18,6 +18,8 @@ In the examples there are two ways of implementing Binary Search Algorithm - usi
 In this technique, a solution is found by iterating over the array and comparing each element with target element to see if they are equal.  
 3. Bubble Sort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(n^2). For small arrays, which are almost sorted, the time complexity in it's best case performance can be equal to O(n).  
 In this technique, algorithm is comparing two adjacent elements and swapping them if the order is not correct. Since we compare each element with another, we need two for loops and that result in complexity of O(n^2).  
+4. Quicksort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(nlogn).  
+In this technique, algorithm is selecting one element from the array - the pivot. All elements which are smaller than the pivot element are placed in one array and all elements which are larger are placed in another array. And the steps repeat recursively. At the end the arrays are combined together.  
 
 ## Technologies
 Project is created with:
