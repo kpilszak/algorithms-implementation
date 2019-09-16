@@ -23,4 +23,12 @@ public class Quicksort {
 
         input.close();
     }
+
+    private static int[] quicksort(int[] arrayToSort) {
+        if (arrayToSort == null || arrayToSort.length == 0) {
+            return arrayToSort;
+        }
+        quicksortRecursive(0, arrayToSort.length - 1);
+        return arrayToSort;
+    }
 }
