@@ -28,7 +28,35 @@ public class Quicksort {
         if (arrayToSort == null || arrayToSort.length == 0) {
             return arrayToSort;
         }
-        quicksortRecursive(0, arrayToSort.length - 1);
+        quicksortRecursive(0, arrayToSort.length - 1, arrayToSort);
         return arrayToSort;
+    }
+
+    private static void quicksortRecursive(int start, int end, int[] arrayToSort) {
+        int i = start;
+        int j = end;
+        int pivot = arrayToSort[start + (end - start)/2];
+
+        while (i <= j) {
+            while (arrayToSort[i] < pivot) {
+                i++;
+            }
+            while (arrayToSort[j] > pivot) {
+                j--;
+            }
+
+            if (i < j) {
+                swap(i, j);
+                i++;
+                j--;
+            }
+        }
+
+        if (start < j) {
+            quicksortRecursive(start, j, arrayToSort);
+        }
+        if (i < end) {
+            quicksortRecursive(i, end, arrayToSort);
+        }
     }
 }
