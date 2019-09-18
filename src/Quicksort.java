@@ -46,7 +46,7 @@ public class Quicksort {
             }
 
             if (i < j) {
-                swap(i, j);
+                swap(arrayToSort, i, j);
                 i++;
                 j--;
             }
@@ -58,5 +58,11 @@ public class Quicksort {
         if (i < end) {
             quicksortRecursive(i, end, arrayToSort);
         }
+    }
+
+    private static void swap(int[] array, int from, int to){
+        int temp = array[from];
+        array[from] = array[to];
+        array[to] = temp;
     }
 }
