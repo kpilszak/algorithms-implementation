@@ -21,6 +21,8 @@ In this technique, algorithm is comparing two adjacent elements and swapping the
 4. Quicksort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(nlogn).  
 In this technique, algorithm is selecting one element from the array - the pivot. All elements which are smaller than the pivot element are placed in one array and all elements which are larger are placed in another array. And the steps repeat recursively. At the end the arrays are combined together.  
 
+
+
 ## Technologies
 Project is created with:
 * Java  
