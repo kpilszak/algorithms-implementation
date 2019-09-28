@@ -37,19 +37,17 @@ public class Quicksort {
         int j = end;
         int pivot = arrayToSort[start + (end - start)/2];
 
-        while (i <= j) {
-            while (arrayToSort[i] < pivot) {
-                i++;
-            }
-            while (arrayToSort[j] > pivot) {
-                j--;
-            }
+        while (arrayToSort[i] < pivot) {
+            i++;
+        }
+        while (arrayToSort[j] > pivot) {
+            j--;
+        }
 
-            if (i < j) {
-                swap(arrayToSort, i, j);
-                i++;
-                j--;
-            }
+        if (i <= j) {
+            swap(arrayToSort, i, j);
+            i++;
+            j--;
         }
 
         if (start < j) {
