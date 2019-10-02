@@ -23,4 +23,14 @@ public class CountingSort {
 
         input.close();
     }
+
+    private static int[] countingSort(int[] arrayToSort) {
+        int[] counterBuckets = new int[arrayToSort.length + 1];
+
+        for (int i : arrayToSort) {
+            ++counterBuckets[i];
+        }
+
+        return arrayToSort;
+    }
 }
