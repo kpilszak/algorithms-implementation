@@ -31,6 +31,6 @@ public class CountingSort {
             ++counterBuckets[i];
         }
 
-        return arrayToSort;
+        return counterBuckets;
     }
 }
