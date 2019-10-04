@@ -20,6 +20,8 @@ In this technique, a solution is found by iterating over the array and comparing
 In this technique, algorithm is comparing two adjacent elements and swapping them if the order is not correct. Since we compare each element with another, we need two for loops and that result in complexity of O(n^2).  
 4. Quicksort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(nlogn).  
 In this technique, algorithm is selecting one element from the array - the pivot. All elements which are smaller than the pivot element are placed in one array and all elements which are larger are placed in another array. And the steps repeat recursively. At the end the arrays are combined together.  
+5. Counting Sort Algorithm - used to sort elements in an array. The time complexity of this algorithm is linear O(n).  
+In this technique, algorithm creates a bucket for each value and keeps a counter in each bucket. Then each time a value is encountered in the input collection, the appropriate counter is incremented. Once every value is inserted into the bucket, the algorithm goes through count array and prints them up depending upon their frequency.  
 
 ## Technologies
 Project is created with:
