@@ -22,6 +22,8 @@ In this technique, algorithm is comparing two adjacent elements and swapping the
 In this technique, algorithm is selecting one element from the array - the pivot. All elements which are smaller than the pivot element are placed in one array and all elements which are larger are placed in another array. And the steps repeat recursively. At the end the arrays are combined together.  
 5. Counting Sort Algorithm - used to sort elements in an array. The time complexity of this algorithm is linear O(n).  
 In this technique, algorithm creates a bucket for each value and keeps a counter in each bucket. Then each time a value is encountered in the input collection, the appropriate counter is incremented. Once every value is inserted into the bucket, the algorithm goes through count array and prints them up depending upon their frequency.  
+6. Radix Sort Algorithm - used to sort elements in an array. The time complexity of this algorithm is O(nw), where w is a maximum number of digits in one key.  
+In this technique, algorithm considers an integer as a string of digits. It sorta the input array according to the digits starting from one's then ten's, hundred's... with the usage ot Counting Sort Algorithm.  
 
 ## Technologies
 Project is created with:
@@ -35,4 +37,6 @@ Type `javac name_of_the_algorithm_file.java` and press enter to compile.
 Type `java name_of_the_algorithm_file` to run the application.  
 
 ## Sources
-This project was created with the usage of [https://www.java67.com](https://www.java67.com)
+This project was created with the usage of:
+1. [https://www.java67.com](https://www.java67.com)
+2. [https://www.geeksforgeeks.org](https://www.geeksforgeeks.org)
