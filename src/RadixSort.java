@@ -23,4 +23,13 @@ public class RadixSort {
 
         input.close();
     }
+
+    private  static int[] radixSort(int[] arrayToSort) {
+        int maximumNumber = getMax(arrayToSort);
+        for (int exp = 1; maximumNumber / exp > 0; exp *= 10) {
+            countSort(arrayToSort, exp);
+        }
+
+        return arrayToSort;
+    }
 }
