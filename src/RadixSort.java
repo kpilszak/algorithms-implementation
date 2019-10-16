@@ -32,4 +32,15 @@ public class RadixSort {
 
         return arrayToSort;
     }
+
+    private static int getMax(int[] array) {
+        int maximumValue = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > maximumValue) {
+                maximumValue = array[i];
+            }
+        }
+
+        return maximumValue;
+    }
 }
