@@ -40,7 +40,6 @@ public class RadixSort {
                 maximumValue = array[i];
             }
         }
-
         return maximumValue;
     }
 }
