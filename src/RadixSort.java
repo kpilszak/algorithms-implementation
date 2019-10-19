@@ -45,6 +45,7 @@ public class RadixSort {
 
     private static void countSort(int[] arrayToSort, int exp) {
         int[] outputArray = new int[arrayToSort.length];
-
+        int[] countingArray = new int[10];
+        Arrays.fill(countingArray, 0);
     }
 }
