@@ -39,7 +39,6 @@ public class CountingSort {
                 ++counter;
             }
         }
-
         return arrayToSort;
     }
 }
