@@ -32,14 +32,12 @@ public class CountingSort {
         }
 
         int counter = 0;
-
         for (int i = 0; i < counterBuckets.length; i++) {
             for (int j = 0; j < counterBuckets[i]; j++) {
                 arrayToSort[counter] = counterBuckets[i];
                 ++counter;
             }
         }
-
         return arrayToSort;
     }
 }
