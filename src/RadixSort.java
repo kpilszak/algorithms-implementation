@@ -6,7 +6,7 @@ public class RadixSort {
         Scanner input = new Scanner(System.in);
         System.out.println("Radix Sort Algorithm");
 
-        System.out.println("Enter total number of elements:");
+        System.out.print("Enter total number of elements: ");
         int lengthOfTheArray = input.nextInt();
 
         int[] arrayOfIntegersToSort = new int[lengthOfTheArray];
@@ -46,5 +46,9 @@ public class RadixSort {
         int[] outputArray = new int[arrayToSort.length];
         int[] countingArray = new int[10];
         Arrays.fill(countingArray, 0);
+
+        for (int i = 0; i < arrayToSort.length; i++) {
+            countingArray[(arrayToSort[i] / exp) % 10]++;
+        }
     }
 }
