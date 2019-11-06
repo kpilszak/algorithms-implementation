@@ -54,5 +54,10 @@ public class RadixSort {
         for (int i = 1; i < 10; i++) {
             countingArray[i] += countingArray[i - 1];
         }
+
+        for (int i = arrayToSort.length - 1; i >= 0; i--) {
+            outputArray[countingArray[(arrayToSort[i] / exp) % 10] - 1] = arrayToSort[i];
+            countingArray[(arrayToSort[i] / exp) % 10]--;
+        }
     }
 }
