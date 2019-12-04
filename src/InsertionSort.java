@@ -23,4 +23,18 @@ public class InsertionSort {
 
         input.close();
     }
+
+    private static int[] insertionSort(int[] arrayToSort) {
+        for (int firstUnsortedIndex = 1; firstUnsortedIndex < arrayToSort.length; firstUnsortedIndex++) {
+            int newElement = arrayToSort[firstUnsortedIndex];
+
+            int i;
+            for (i = firstUnsortedIndex; i > 0 && arrayToSort[i - 1] > newElement; i--) {
+                arrayToSort[i] = arrayToSort[i - 1];
+            }
+
+            arrayToSort[i] = newElement;
+        }
+        return arrayToSort;
+    }
 }
