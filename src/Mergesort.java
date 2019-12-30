@@ -23,4 +23,9 @@ public class Mergesort {
 
         input.close();
     }
+
+    private static int[] mergesort(int[] arrayToSort) {
+
+        return arrayToSort;
+    }
 }
