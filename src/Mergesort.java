@@ -25,7 +25,36 @@ public class Mergesort {
     }
 
     private static int[] mergesort(int[] arrayToSort) {
-
+        mergeSortRecursively(arrayToSort, 0, arrayToSort.length);
         return arrayToSort;
+    }
+
+    public static void mergeSortRecursively(int[] input, int start, int end) {
+        if (end - start < 2) {
+            return;
+        }
+
+        int mid = (start + end) / 2;
+        mergeSortRecursively(input, start, mid);
+        mergeSortRecursively(input, mid, end);
+        merge(input, start, mid, end);
+    }
+
+    public static void merge(int[] input, int start, int mid, int end) {
+        if (input[mid - 1] <= input[mid]) {
+            return;
+        }
+
+        int i = start;
+        int j = mid;
+        int tempIndex = 0;
+
+        int[] tempArray = new int[end - start];
+        while (i < mid && j < end) {
+            tempArray[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
+        }
+
+        System.arraycopy(input, i, input, start + tempIndex, mid - i);
+        System.arraycopy(tempArray, 0, input, start, tempIndex);
     }
 }
