@@ -26,7 +26,8 @@ In this technique, algorithm creates a bucket for each value and keeps a counter
 In this technique, algorithm considers an integer as a string of digits. It sorta the input array according to the digits starting from one's then ten's, hundred's... with the usage ot Counting Sort Algorithm.  
 7. Insertion Sort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(n^2).  
 In this technique, algorithm is seeking for the biggest number in an array in every loop and swapping it with the element on the last unsorted index.  
-8. Mergesort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(nlogn).  
+8. Mergesort Algorithm - used to sort elements in an array. The time complexity of this algorithm is in average O(nlogn).
+In this technique, algorithm has two phases - splitting and merging. After the splitting phase (done without any comparisons), there is n divided 1 - element collections. During the merge phase, algorithm is comparing two collections (pointer is moving one-by-one) and merging them together in the correct order.  
 
 
 ## Technologies
