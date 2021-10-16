@@ -33,7 +33,7 @@ In this technique, algorithm has two phases - splitting and merging. After the s
 ## Technologies
 Project is created with:
 * Java  
-IDE: Intellij IDEA 2018
+IDE: Intellij IDEA 2020
 
 ## Setup
 To run this project, you need to have `jdk` and `jre` installed.
